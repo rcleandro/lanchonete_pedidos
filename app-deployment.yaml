@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: lanchonete-pagamentos
+      app: lanchonete-pedidos
   template:
     metadata:
       labels:
-        app: lanchonete-pagamentos
+        app: lanchonete-pedidos
     spec:
       containers:
-        - name: lanchonete-pagamentos-container
-          image: lanchonete-pagamentos:latest
+        - name: lanchonete-pedidos-container
+          image: lanchonete-pedidos:latest
           env:
             - name: AWS_ACCESS_KEY_ID
               valueFrom:

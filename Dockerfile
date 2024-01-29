@@ -23,6 +23,6 @@ ENV MYSQL_DATABASE=lanchonete
 ENV MYSQL_USER=admin
 ENV MYSQL_PASSWORD=lanchonete
 
-ADD /target/lanchonete-0.0.1-SNAPSHOT.jar lanchonete-pagamentos.jar
+ADD /target/lanchonete-0.0.1-SNAPSHOT.jar lanchonete-pedidos.jar
 
 ENTRYPOINT ["java", "-jar", "lanchonete.jar"]
